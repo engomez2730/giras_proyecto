@@ -66,6 +66,7 @@ include 'PHP/giracabeza.php'
                     <input type="password" name="contrasena2"   minlength = "8" maxlength = "12" class="form-control" required>
             </div>
         </div>
+        
 
             
             <div class="row" id="espacio">

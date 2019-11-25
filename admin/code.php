@@ -71,6 +71,8 @@ if(isset($_POST['delete_btn']))
 
 {
     $id= $_POST['delete_id'];
+
+    
    
 
     $query = "DELETE  FROM  usuariosadmin  WHERE id_admin='$id' ";
