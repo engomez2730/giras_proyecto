@@ -1,6 +1,8 @@
 <?php
 include './conexion.php';
 
+#Este es el archivo del Login
+
 if(isset($_POST['correo'])){
     $correo=$_POST['correo'];
     $contrasena=$_POST['contrasena'];

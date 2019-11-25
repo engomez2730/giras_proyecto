@@ -5,6 +5,8 @@ include 'PHP/giracabeza.php'
 ?>
 <title>Registrarse</title>
 
+<!--Formulario de Registrarse-->
+
 <div class="container">
     <div class="d-flex justify-content-center h-100" id="formulario">
         <div class="card">

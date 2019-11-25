@@ -4,6 +4,8 @@
   if(isset($_GET['accion'])){
       $i=$_GET['accion'];
   }
+
+  #Este Archivo es donde registro los datos desde el formulario (Creargira2.php) a la base de datos.
   
   if($i=="INS"){
     

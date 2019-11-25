@@ -10,6 +10,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	
 </head>
+
+<!--Formulario del Login-->
 <body>
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
