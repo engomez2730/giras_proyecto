@@ -1,8 +1,8 @@
-#Giras proyect
+﻿# Giras proyect
 
-##Autor : Enderson
-##Fecha : 11-24-2019
+## Autor : Enderson 
+## Fecha : 11-24-2019
 
-#Descripcion
+# Descripcion
 
 Proyecto para crear giras de viajes.
