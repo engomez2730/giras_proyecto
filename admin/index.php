@@ -1,6 +1,24 @@
 <?php
-include('includes/header.php'); 
-include('includes/navbarq.php'); 
+	session_start();//Iniciando seccion
+
+	include('includes/header.php'); 
+	include('includes/navbarq.php'); 
+
+	//Verificando privilegios de usuario
+	if($_SESSION['PUSUARIO']==1){
+		//Usuario es Administrador
+	
+	}else if($_SESSION['PUSUARIO']==2){
+		
+		echo "No cuenta con los privilegios para acceder a esta pagina";
+		exit();
+		
+	}else{
+
+		echo "No cuenta con los privilegios para acceder a esta pagina";
+		exit();
+	
+	}
 ?>
 
 

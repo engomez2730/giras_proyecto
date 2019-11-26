@@ -77,7 +77,7 @@
                          </div>
                         <div  class="row" id="botones">     
                                 <button id="botones1" type="submit" class="btn btn-primary btn-lg btn btn-info">Crear Gira</button>
-                                <button id="botones2" type="button" class="btn btn-primary btn-lg btn btn-danger" >Cancelar</button>
+                                <a href="inicio/index.php"><button id="botones2" type="button" class="btn btn-primary btn-lg btn btn-danger" >Cancelar</button></a>
                             </div>
                         </div>
                         </div>
