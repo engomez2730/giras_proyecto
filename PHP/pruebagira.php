@@ -44,7 +44,8 @@
        `cantidad_gira`,
        `encuentro_gira`,
        `descripcion_gira`,
-	   `imagen_gira`) VALUES
+	   `imagen_gira`,
+	   `estado_gira`) VALUES
      ('$nombregira',
       '$lugargira',
       '$preciogira',
@@ -53,7 +54,8 @@
       '$cantidadgira',
       '$puntogira',
       '$descripciongira',
-	  '$nuevo_path')";
+	  '$nuevo_path',
+	  '$cantidadgira')";
 
         if($mysqli->query($sql)){
             $status='success';

@@ -342,12 +342,25 @@
 							<li>Hora: '. $rcolsult_result["hora_gira"] .'</li>
 							<li>Lugar: '. $rcolsult_result["lugar_gira"] .'</li>
 							<li>Precio: '. $rcolsult_result["precio_gira"] .'</li>
+							<li>Cupos disponibles: '. $rcolsult_result["estado_gira"] .'</li>
 							<li>Limite de participantes: '. $rcolsult_result["cantidad_gira"] .'</li>
 							<li>Lugar de encuentro: '. $rcolsult_result["encuentro_gira"] .'</li>
 							</ul>
+							
+							<!-- Agregando formulario para registro de usuario a la gira -->
+							<form action="../php/tomarCupoGira.php" method="POST">'; ?> <!-- Cierre php -->
+
+								<input  name= "<?php echo 'E'.$rcolsult_result['id_giras'] ?>" type="hidden" class="form-control">
+								<button type="submit" id="boton1"; class="btn btn-info">Tomar un cupo</button>
+								
+								<!-- Abriendo php --><?php
+							
+								echo '
+							</form><br>
+							
 							<button class="btn btn-primary" data-dismiss="modal" type="button">
 							<i class="fas fa-times"></i>
-							Close Project</button>
+							Cerrar Detalles de Gira</button>
 						</div>
 						</div>
 					</div>
