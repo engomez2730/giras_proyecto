@@ -23,21 +23,21 @@ include('includes/conexion.php');
             <div class="row">
             <div class="form-group">
                 <label> Nombre de Gira </label>
-                <input type="text" name="nombregira" class="form-control" placeholder="Enter Username">
+                <input type="text" name="nombregira" class="form-control" placeholder="Campo Obligatorio">
             </div>
             <div class="form-group">
                 <label>Lugar Gira</label>
-                <input type="text" name="lugargira" class="form-control" placeholder="Enter Email">
+                <input type="text" name="lugargira" class="form-control" placeholder="Campo Obligatorio">
             </div>
             </div>
             <div class="row">
             <div class="form-group">
                 <label>Precio Gira</label>
-                <input type="password" name="preciogira" class="form-control" placeholder="Enter Password">
+                <input type="text" name="preciogira" class="form-control" placeholder="Campo Obligatorio">
             </div>
             <div class="form-group">
                 <label>Hora Salida</label>
-                <input type="password" name="horagira" class="form-control" placeholder="Confirm Password">
+                <input type="time" name="horagira" class="form-control" placeholder="Campo Obligatorio">
             </div>
             </div>
 
@@ -46,12 +46,12 @@ include('includes/conexion.php');
 
             <div class="form-group">
                 <label> Fecha </label>
-                <input type="text" name="fechagira" class="form-control" placeholder="Enter Username">
+                <input type="date" name="fechagira" class="form-control" placeholder="Campo Obligatorio">
             </div>
 
             <div class="form-group">
                 <label>Cantidad personas</label>
-                <input type="text"  class="form-control" placeholder="Enter Email">
+                <input type="text"  class="form-control" placeholder="Campo Obligatorio">
             </div>
 
            </div>
@@ -60,12 +60,12 @@ include('includes/conexion.php');
 
  <div class="form-group">
     <label> Punto de Encuentro  </label>
-    <input type="text" name="puntogira" class="form-control" placeholder="Enter Username">
+    <input type="text" name="puntogira" class="form-control" placeholder="Campo Obligatorio">
 </div>
 
 <div class="form-group">
     <label>Actividad Principal</label>
-    <input type="text" name="descripciongira" class="form-control" placeholder="Enter Email">
+    <input type="text" name="descripciongira" class="form-control" placeholder="Campo Obligatorio">
 </div>
 
 </div>
@@ -74,8 +74,8 @@ include('includes/conexion.php');
         
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="submit" name="codegirabtn" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+            <button type="submit" name="codegirabtn" class="btn btn-success">Guardar</button>
         </div>
       </form>
 
@@ -156,14 +156,14 @@ include('includes/conexion.php');
                <td> <?php echo $row['precio_gira'] ?></td>
                <td>
                <form action="registrer_edit_gira.php" method="post">
-                    <input type="text" name="edit_id_gira" value="<?php echo $row['id_giras']?>">
+                    <input type="hidden" name="edit_id_gira" value="<?php echo $row['id_giras']?>">
                     <button  type="submit" name="edit_btn_gira" class="btn btn-success"> EDIT</button>
                 </form>
                </td>
                <td>
 
                <form action="codegira.php" method="post">
-                  <input type="hidden " name="delete_id_giras" value="<?php echo $row['id_giras'] ?>">
+                  <input type="hidden" name="delete_id_giras" value="<?php echo $row['id_giras'] ?>">
                   <button type="submit" name="delete_btn_gira" class="btn btn-danger"> DELETE</button>
                </form>
                

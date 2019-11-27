@@ -44,13 +44,7 @@
                </div>
             </div>
 
-            <div class="row" id="contrasena">
-                    <div class="col-md-8 col-sm-10 col-xs-12 offset-1">
-					<div class="row align-items-center remember">
-						<input type="checkbox">Recordar Contrase&ntilde;a
-                    </div>
-                    </div>
-            </div>
+           
 
             <div class="row" id="btn">
             <div class="col-md-8 col-sm-10 col-xs-12 offset-1">
@@ -58,16 +52,15 @@
 				 <input type="submit" value="Login" class="btn float-right login_btn"/>
                </div>
             </div>
+
+            <h5> No tienes cuenta?</h5>
+            
+            <a href="./registrarse.php">Registrate</a>
 					
 		</form>
 			</div>
-			<div class="card-footer" id="login">
-				<div class="d-flex justify-content-center links">
-				No tienes cuenta?<a href="./registrarse.php">Registrate</a>
-				</div>
-				<div class="d-flex justify-content-center" id="login">
-					<a href="#">¿Olvidaste tu Contrase&ntilde;a</a>
-				</div>
+		    
+			
 			</div>
 		</div>
 	</div>
@@ -198,7 +191,16 @@ a{
     color: #FFC312;
 
 }
+
+.card-body{
+    margin-left: 60px;
 }
+
+.h5{
+    margin-bottom: 10px;
+}
+
+
 
 
 

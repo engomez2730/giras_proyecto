@@ -28,7 +28,7 @@ include('includes/conexion.php');
       <form action="./codegira.php" method="POST"> 
 
 
-         <input type="text"  value="<?php echo $row['id_giras']; ?>" name="edit_id_gira" class="form-group" >
+         <input type="hidden"  value="<?php echo $row['id_giras']; ?>" name="edit_id_gira" class="form-group" >
          <div class="form-group">
          <label> Nombre de la Gira </label>
          <input type="text" name="edit_nombre_gira" value="<?php echo $row['nombre_gira']; ?>" class="form-control">
@@ -36,6 +36,30 @@ include('includes/conexion.php');
          <div class="form-group">
          <label>Lugar Gira</label>
          <input type="text" name="edit_lugar_gira" value="<?php echo $row['lugar_gira']; ?>" class="form-control" placeholder="Enter Email">
+         </div>
+         <div class="form-group">
+         <label> Precio Gira</label>
+         <input type="text" name="edit_precio_gira" value="<?php echo $row['precio_gira']; ?>" class="form-control">
+         </div>
+         <div class="form-group">
+         <label> Hora de Salida </label>
+         <input type="text" name="edit_hora_gira" value="<?php echo $row['hora_gira']; ?>" class="form-control">
+         </div>
+         <div class="form-group">
+         <label> Fecha </label>
+         <input type="text" name="edit_fecha_gira" value="<?php echo $row['fecha_gira']; ?>" class="form-control">
+         </div>
+         <div class="form-group">
+         <label> Cantidad de Personas</label>
+         <input type="text" name="edit_cantidad_gira" value="<?php echo $row['cantidad_gira']; ?>" class="form-control">
+         </div>
+         <div class="form-group">
+         <label> Punto de encuentro </label>
+         <input type="text" name="edit_punto_gira" value="<?php echo $row['encuentro_gira']; ?>" class="form-control">
+         </div>
+         <div class="form-group">
+         <label> Actividad Principal </label>
+         <input type="text" name="edit_actividad_gira" value="<?php echo $row['descripcion_gira']; ?>" class="form-control">
          </div>
          
          <button type="submit"  name="actualizargira" class="btn btn-info">Actualizar</button>

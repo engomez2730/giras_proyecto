@@ -28,7 +28,7 @@ include('includes/conexion.php');
       <form action="code.php" method="POST"> 
 
 
-         <input type="text" value="<?php echo $row['id_admin']; ?>" name="edit_id" class="form-group">
+         <input type="hidden" value="<?php echo $row['id_admin']; ?>" name="edit_id" class="form-group">
          <div class="form-group">
          <label> Nombre de Usuario </label>
          <input type="text" name="edit_user" value="<?php echo $row['user']; ?>" class="form-control" placeholder="Enter Username">

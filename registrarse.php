@@ -71,18 +71,7 @@ include 'PHP/giracabeza.php'
         
 
             
-            <div class="row" id="espacio">
-                <div class="col-md-10 col-sm-12 col-xs-12">
-                        <div class="form-group">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                                  <label class="form-check-label" for="gridCheck">
-                                   Acepto los Terminos y condiciones.
-                                  </label>
-                                </div>
-                         </div>
-            </div>
-             </div>
+    
         </div>
         <div class="row">
         <div class="col-md-10 col-sm-12 col-xs-12">
@@ -101,7 +90,7 @@ include 'PHP/giracabeza.php'
 <style>
 
 h6{
-    margin-left: 120px;
+    margin-left: 160px;
     margin-top: 10px;
     color:#FFC312; 
     
@@ -155,12 +144,12 @@ h6{
 
 #boton1{
     background: #FFC312;
-    margin-top: -60px;
+    margin-top: -80px;
     margin-left: 175px;
     padding-left: 20px;
 }
 #boton2{
-    margin-top: -60px;
+    margin-top: -80px;
     margin-left: 20px;
     padding-left: 20px;
 }

@@ -54,9 +54,16 @@ if($i=="INS2"){
      $id=$_POST['edit_id_gira'];
      $nombregira=$_POST['edit_nombre_gira'];
      $lugargira=$_POST['edit_lugar_gira'];
+     $preciogira=$_POST['edit_precio_gira'];
+     $horagira=$_POST['edit_hora_gira'];
+     $fechagira=$_POST['edit_fecha_gira'];
+     $cantidadgira=$_POST['edit_cantidad_gira'];
+     $puntogira=$_POST['edit_punto_gira'];
+     $actividadgira=$_POST['edit_actividad_gira'];
+
   
 
-    $query = "UPDATE giras1 SET nombre_gira='$nombregira', lugar_gira='$lugargira' WHERE id_giras='$id' ";
+    $query = "UPDATE giras1 SET nombre_gira='$nombregira', lugar_gira='$lugargira', precio_gira='$preciogira', hora_gira='$horagira', fecha_gira='$fechagira', cantidad_gira='$cantidadgira', encuentro_gira='$puntogira', descripcion_gira='$actividadgira'  WHERE id_giras='$id' ";
     $query_run = mysqli_query($mysqli,$query);
 
   
