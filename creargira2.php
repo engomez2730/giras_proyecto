@@ -31,7 +31,7 @@
             </div>
 
             <div class="card-body">
-                    <form action="./php/pruebagira.php?accion=INS" method="POST">
+                    <form enctype="multipart/form-data" action="./php/pruebagira.php?accion=INS" method="POST">
                          <div class="row"  id="espacio">
                             <div class="col-md-6 col-sm-12 col-xs-12">
                                 <label for="nombregira"><h5><i class="fas fa-umbrella-beach"></i> Nombre de la Gira</h5></label>
@@ -73,7 +73,10 @@
                                 <label for="nombregira"><h5><i class="fas fa-pencil-ruler"></i> Actividad Princpal</h5></label>
                                 <input name="descripciongira" type="text" class="form-control" placeholder="Obligatorio" rows="3"></textarea>
                              </div>
-                            
+							 <div class="col-md-6 col-sm-12 col-xs-12">
+                                Seleccionar una imagen:<input type="file" name="subirImagen">
+                             </div>
+						 
                          </div>
                         <div  class="row" id="botones">     
                                 <button id="botones1" type="submit" class="btn btn-primary btn-lg btn btn-info">Crear Gira</button>
